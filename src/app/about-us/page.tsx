@@ -1,4 +1,4 @@
-import ShuffleHero from '@/components/about-us-hero';
+
 import HeroWithCanvasReveal from '@/components/hero_neo';
 import { Marketing } from '@/components/marketing';
 import { WhyUs } from '@/components/why-us';

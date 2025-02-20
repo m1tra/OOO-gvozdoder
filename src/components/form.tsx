@@ -114,9 +114,9 @@ export function DialoAuth() {
                         className="col-span-3 " />
                   </div>
                 </div>
-                <DialogFooter className="flex justify-between w-full">
+                <DialogFooter className="flex justify-between w-full gap-2">
                   <Button type="button" onClick={() => { setIsDialogOpen(false); setIsLogDialogOpen(true);}}>
-                    Quick sign up
+                    Quick sign in
                   </Button>
                   <ValidateToast 
                     emailError={emailError} 
@@ -149,7 +149,7 @@ export function DialoAuth() {
           </form>
           <DialogFooter className="flex justify-between w-full">
             <Button variant="link" onClick={() => { setIsLogDialogOpen(false); setIsDialogOpen(true); }}>
-              Back to login
+              Back to sign up
             </Button>
             <Button type="submit">Sign in</Button>
           </DialogFooter>

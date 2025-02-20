@@ -71,11 +71,11 @@ export function ValidateToast({ emailError, usernameError, passwordError }:IErro
       };
     return (
       <Button
-        className="w-20 px-3"
+        className="w-full lg:w-20 px-3 "
         variant="outline"
         onClick={handleClick}
       >
-        Sign in
+        Sign up
       </Button>
     )
   }

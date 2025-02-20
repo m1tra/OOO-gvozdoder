@@ -95,7 +95,7 @@ const ReturnsSection = () => {
                     <p className='pt-4 text-neutral-300 text-sm'>Start a return on our website or on the app and follow the instructions. You’ll receive all the details you need before dropping off your parcel at the drop-off point. 
                         Did you buy something in one of our stores? You cannot return this by post.</p>
                     <p className='pt-4 text-neutral-300 text-sm'>Did you buy something in one of our stores? You cannot return this by post.</p>
-                    <Link href='/returns/start_a_return'>
+                    <Link href='/returns/start-a-return'>
                         <Button className='mt-2 font-bold rounded-none'>START A RETURN</Button>
                     </Link>
                 </div>

@@ -41,7 +41,7 @@ export function DialoAuth() {
   
   const {register,handleSubmit, formState} = useForm<IAForm>({
     defaultValues:{
-        'email':'michailErmak@mail.ru',
+        'email':'michail@mail.ru',
         'username':'misha'
     },
     mode:'onChange',
@@ -139,7 +139,7 @@ export function DialoAuth() {
           <form className="grid gap-4 py-4">
             <div className="grid grid-cols-4 items-center gap-4">
               <Label htmlFor="email" className="text-right">Email</Label>
-              <Input id="email" defaultValue="Michael Ermak" className="col-span-3" />
+              <Input id="email" defaultValue="Michael" className="col-span-3" />
             </div>
 
             <div className="grid grid-cols-4 items-center gap-4">

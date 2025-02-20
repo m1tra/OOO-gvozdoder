@@ -77,7 +77,7 @@ export default function Header({}: Props) {
             </DrawerContent>
           </Drawer>
 
-            <div className='flex gap-4'>
+            <div className='flex gap-2'>
                 <Link href="https://github.com/m1tra/OOO-gvozdoder">
                   <Github className='text-neutral-300' strokeWidth={1} />
                 </Link>

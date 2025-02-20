@@ -1,6 +1,7 @@
 
 import HeroWithCanvasReveal from '@/components/hero_neo';
 import { Marketing } from '@/components/marketing';
+import { Statistic } from '@/components/statistic';
 import { WhyUs } from '@/components/why-us';
 import React from 'react';
 
@@ -25,9 +26,9 @@ const AboutUs = () => {
                 3 рекламное промо
             */}
             <HeroWithCanvasReveal/>
-            {/* <ShuffleHero/> */}
             <WhyUs/>
             <Marketing/>
+            <Statistic/>
         </main>
     );
 };

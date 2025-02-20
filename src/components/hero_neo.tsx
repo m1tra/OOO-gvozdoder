@@ -1,6 +1,7 @@
 "use client"
 import { CanvasRevealEffect } from "@/components/ui/canvas-reveal-effect"
 import { Button } from "@/components/ui/button"
+import { Wrap } from "./ui/wrapper"
 
 export default function HeroWithCanvasReveal() {
   return (
@@ -24,13 +25,16 @@ export default function HeroWithCanvasReveal() {
 
       {/* Hero Content */}
       <div className="relative z-10 text-center px-4 sm:px-6 lg:px-8">
-        <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight mb-4">
-          Welcome to the Future
-        </h1>
+        <Wrap>
+          <h1 className="text-4xl text-center sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight mb-4">
+            Welcome to the Future
+          </h1>
+        </Wrap>
+        <Wrap>
         <p className="mt-6 text-xl sm:text-2xl text-gray-300 max-w-3xl mx-auto">
             Experience the power of innovation with ur cutting-edge gvozdi. Ein us on a journey to transform ur home.
         </p>
-
+        </Wrap>
       </div>
     </div>
   )

@@ -5,7 +5,7 @@ type Props = {}
 export const WhyUs = (props: Props) => {
   return (
     <div className='max-w-screen-xl mx-auto '>
-        <h1 className='text-neutral-300 font-bold text-5xl '>Почему мы</h1>
+        <h1 className='text-neutral-300 font-bold text-5xl '>Why us</h1>
         <div className='relative  px-5'>
             <div className="absolute inset-0 bg-gradient-to-t from-neutral-950 to-transparent"/>
             <div className="absolute inset-0 bg-gradient-to-b from-neutral-950 to-transparent"/>

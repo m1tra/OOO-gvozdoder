@@ -1,4 +1,5 @@
 import ShuffleHero from '@/components/about-us-hero';
+import HeroWithCanvasReveal from '@/components/hero_neo';
 import { Marketing } from '@/components/marketing';
 import { WhyUs } from '@/components/why-us';
 import React from 'react';
@@ -23,7 +24,8 @@ const AboutUs = () => {
                 2 почему мы
                 3 рекламное промо
             */}
-            <ShuffleHero/>
+            <HeroWithCanvasReveal/>
+            {/* <ShuffleHero/> */}
             <WhyUs/>
             <Marketing/>
         </main>

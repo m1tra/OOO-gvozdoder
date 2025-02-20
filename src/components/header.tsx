@@ -1,6 +1,6 @@
 'use client'
 import React, { useState } from 'react'
-import { Instagram, Phone, Twitter, UserRound, Youtube } from 'lucide-react';
+import { Github, Instagram, Phone, Twitter, UserRound, Youtube } from 'lucide-react';
 import { ShoppingCart } from 'lucide-react';
 import { DialoAuth } from './form';
 import Link from 'next/link';
@@ -30,7 +30,6 @@ export default function Header({}: Props) {
                 <Link href = "/order">
                   <div className='text-neutral-300 text-sm '>Order gvozdi</div>
                 </Link>
-                <div className='text-neutral-300 text-sm '>My account</div>
                 <Link href = "/returns">
                   <div className='text-neutral-300 text-sm '>Exchanges & Returns</div>
                 </Link>
@@ -62,24 +61,25 @@ export default function Header({}: Props) {
               <Link href="/order" onClick={handleLinkClick}>
                 <div className='text-white text-base'>Order gvozdi</div>
               </Link>
-              <div className='text-white text-base'>My account</div>
               <Link href="/returns" onClick={handleLinkClick}>
                 <div className='text-white text-base'>Exchanges & Returns</div>
               </Link>
             </div>
             <DrawerFooter>
               <div className='flex gap-2 justify-end'>
-                <Instagram className='text-neutral-300' strokeWidth={1}/>
-                <Twitter className='text-neutral-300' strokeWidth={1}/>
-                <Youtube className='text-neutral-300' strokeWidth={1}/>
-                <Phone className='text-neutral-300' strokeWidth={1}/>
+                <Link href="https://github.com/m1tra/OOO-gvozdoder">
+                  <Github className='text-neutral-300' strokeWidth={1} />
+                </Link>
               </div>
             </DrawerFooter>
             </DrawerContent>
           </Drawer>
 
             <div className='flex gap-4'>
-                <DialoAuth/>
+                <Link href="https://github.com/m1tra/OOO-gvozdoder">
+                  <Github className='text-neutral-300' strokeWidth={1} />
+                </Link>
+              <DialoAuth/>
             </div>
         </div>
     </div>

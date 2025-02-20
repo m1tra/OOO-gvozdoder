@@ -57,7 +57,7 @@ export function DialoAuth() {
     <>
       <Dialog open={isDialogOpen} onOpenChange={setIsDialogOpen}>
         <DialogTrigger asChild>
-          <User strokeWidth={2} className='text-neutral-300' size={26}/>
+          <User className='text-neutral-300' strokeWidth={1}  size={26}/>
         </DialogTrigger>
         <DialogContent className="sm:max-w-[425px]">
           <DialogHeader>

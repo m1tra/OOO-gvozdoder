@@ -11,7 +11,11 @@ type Props = {}
 
 export default function Header({}: Props) {
   const [showPanel,setShowPanel]=useState(false)
+  const [isOpen, setIsOpen] = useState(false);
 
+  const handleLinkClick = () => {
+    setIsOpen(false); // Закрываем Drawer
+  };
   const handleShow=(val?:boolean)=>{
     setShowPanel(val!)
   }
@@ -31,7 +35,7 @@ export default function Header({}: Props) {
                   <div className='text-neutral-300 text-sm '>Exchanges & Returns</div>
                 </Link>
             </div>    
-            <Drawer>
+            <Drawer open={isOpen} onOpenChange={setIsOpen}>
               <DrawerTrigger asChild>
                 <motion.button
                   onClick={()=>handleShow(!showPanel)} 
@@ -48,19 +52,21 @@ export default function Header({}: Props) {
                
               </DrawerTitle>
             </DrawerHeader>
-              <div className='flex flex-col gap-4 h-96 p-5'>
-                <div className='text-white text-base '>OOO gvozdoder</div>
-                <Link href = "/about-us">
-                  <div className='text-white text-base '>About-us</div>
-                </Link>
-                <Link href = "/order">
-                  <div className='text-white text-base '>Order gvozdi</div>
-                </Link>
-                <div className='text-white text-base '>My account</div>
-                <Link href = "/returns">
-                  <div className='text-white text-base '>Exchanges & Returns</div>
-                </Link>
-            </div> 
+            <div className='flex flex-col gap-4 h-96 p-5'>
+              <Link href="/" onClick={handleLinkClick}>
+                <div className='text-white text-base'>OOO gvozdoder</div>
+              </Link>
+              <Link href="/about-us" onClick={handleLinkClick}>
+                <div className='text-white text-base'>About-us</div>
+              </Link>
+              <Link href="/order" onClick={handleLinkClick}>
+                <div className='text-white text-base'>Order gvozdi</div>
+              </Link>
+              <div className='text-white text-base'>My account</div>
+              <Link href="/returns" onClick={handleLinkClick}>
+                <div className='text-white text-base'>Exchanges & Returns</div>
+              </Link>
+            </div>
             <DrawerFooter>
               <div className='flex gap-2 justify-end'>
                 <Instagram className='text-neutral-300' strokeWidth={1}/>

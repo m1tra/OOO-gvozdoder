@@ -133,7 +133,7 @@ const ReturnsSection = () => {
                     <p className='pt-2 text-neutral-300 text-sm'>Chatbot Support: Available 24/7</p>
                 </div>
                 <div className='pt-5'>
-                    <h3 className='font-bold'>Call: 1-800-982-9337 </h3>
+                    <h3 className='font-bold'>Call: 9-999-999-9999 </h3>
                     <p className='pt-2 text-neutral-300 text-sm'>5:00 am - 8:00 pm PT, Mon - Sun</p>
                 </div>
                 

@@ -23,7 +23,9 @@ export default function Header({}: Props) {
     <div className='z-50 fixed h-16 bg-neutral-950/90 backdrop-blur w-full border-b flex items-center border-neutral-700'>
         <div className='flex w-full items-center justify-between px-10'>
             <div className='hidden lg:flex gap-4'>
-                <div className='text-neutral-300 text-sm '>OOO gvozdoder</div>
+                <Link href = "/">
+                  <div className='text-neutral-300 text-sm '>OOO gvozdoder</div>
+                </Link>
                 <Link href = "/about-us">
                   <div className='text-neutral-300 text-sm '>About-us</div>
                 </Link>

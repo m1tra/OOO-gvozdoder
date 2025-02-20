@@ -1,5 +1,4 @@
 import { DataTableDemo } from '@/components/card';
-import { OrderDialog } from '@/components/order_form';
 import React from 'react';
 const nailsCatalog = {
     nails: [

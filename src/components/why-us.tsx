@@ -1,6 +1,7 @@
 'use client'
 import React, { useState } from 'react';
 import { Wrap } from './ui/wrapper';
+import { Play } from 'lucide-react';
 
 type Props = {};
 
@@ -26,7 +27,7 @@ export const WhyUs = (props: Props) => {
               className="absolute inset-0 flex items-center justify-center cursor-pointer" 
               onClick={handleVideoClick}
             >
-              <span className="text-white text-3xl">▶︎</span> {/* Play button */}
+              <span className="text-white text-3xl"><Play /></span> {/* Play button */}
             </div>
           ) : (
             <video

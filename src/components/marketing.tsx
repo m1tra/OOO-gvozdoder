@@ -15,7 +15,7 @@ export const Marketing = (props: Props) => {
   return (
     <div className='max-w-screen-xl mx-auto'>
       <Wrap>
-        <h1 className='text-neutral-300 font-bold text-4xl lg:text-5xl pl-2 text-center'>Why us</h1>
+        <h1 className='text-neutral-300 font-bold text-4xl lg:text-5xl pl-2 text-center'>Promo</h1>
       </Wrap>
       <div className='relative px-5'>
         <div className="absolute inset-0 bg-gradient-to-t from-neutral-950 to-transparent" />
@@ -37,7 +37,7 @@ export const Marketing = (props: Props) => {
               muted
               controls // Добавляем controls для плеера
             >
-              <source src="123.mp4" type="video/mp4" />
+              <source src="/video/123.mp4" type="video/mp4" />
               Ваш браузер не поддерживает видео.
             </video>
           )}
